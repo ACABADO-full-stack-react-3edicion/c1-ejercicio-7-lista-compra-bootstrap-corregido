@@ -1,0 +1,87 @@
+:root {
+  --color-primario: #f87500;
+  --color-secundario: #5e81d1;
+  --color-primario-claro: #ff8d27;
+  --color-texto: #212529;
+  --espacio-lateral: 23px;
+  --espacio-vertical: 53px;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body,
+input,
+button {
+  color: var(--color-texto);
+}
+body {
+  background-color: var(--color-primario-claro);
+}
+.cabecera {
+  background-color: var(--color-secundario);
+  height: 148px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.info {
+  background-color: var(--color-primario);
+  height: 104px;
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.15);
+}
+.cabecera .navegacion li {
+  margin-left: 23px;
+}
+.cabecera .navegacion .actual {
+  font-weight: bold;
+}
+i.icono {
+  font-size: 38px;
+}
+.n-articulos {
+  font-size: 24px;
+}
+.precio-total {
+  font-size: 20px;
+}
+.articulo {
+  font-size: 20px;
+}
+.articulos {
+  position: relative;
+}
+.articulos:after {
+  content: "";
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+}
+.marcar {
+  width: 20px;
+  height: 20px;
+}
+.borrar {
+  flex: 0 60px;
+  font-size: 24px;
+}
+.precio {
+  flex: 0 105px;
+}
+.marcar-contenedor {
+  flex: 0 20px;
+}
+.enviar {
+  background-color: var(--color-secundario);
+}
+#precio {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
